@@ -112,6 +112,7 @@ border: 2px solid #1E90FF;
 }
 
 h.menu_item {
+  border: none;
   color: #ffffff;
   font-weight: bold;
 margin-left: 10px;
