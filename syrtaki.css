@@ -108,11 +108,11 @@ border-radius: 10px;
 .menu_item {
 border: 2px solid #1E90FF;
   border-radius: 8px;
-  background-color: #1E90FF;
+  background-color: #0D5EAF;
 }
 
 h.menu_item {
-  color: black;
+  color: #ffffff;
   font-weight: bold;
 margin-left: 10px;
 }
