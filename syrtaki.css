@@ -112,6 +112,10 @@ border: 2px solid #OD5EAF;
 margin-left: 10px;
 }
 
+h.menu_item {
+margin-left: 10px;
+}
+
 /* Footer */
 .footer {
   padding: 20px;
