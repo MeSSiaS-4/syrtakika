@@ -4,7 +4,6 @@
 
 /* Style the body */
 body {
-  height: 100%;
   color:#ffffff;
   background-color:#000000;
   font-family: Arial;
@@ -103,7 +102,7 @@ border-radius: 10px;
 .main {
   flex: 70%;
   padding: 20px;
-  height: 100%;
+  float: right;
 }
 
 /* Menu items */
