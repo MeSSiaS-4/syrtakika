@@ -102,7 +102,7 @@ border-radius: 10px;
 .main {
   flex: 70%;
   padding: 20px;
-  position: absolute; /*or fixed*/
+  position: fixed; /*or fixed*/
   right: 0px;
 }
 
