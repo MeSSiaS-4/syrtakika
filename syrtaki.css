@@ -121,6 +121,19 @@ margin-left: 10px;
 
 /* Name of item & info for the item */
 
+.item_name {
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+
+.item_info {
+  color: #ffffff;
+  margin-left: 5px;
+  margin-top: -5px;
+  margin-bottom: 0px;
+}
 
 
 /* Footer */
