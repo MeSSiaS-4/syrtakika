@@ -106,9 +106,9 @@ border-radius: 10px;
 
 /* Menu items */
 .menu_item {
-border: 2px solid #OD5EAF;
+border: 2px solid #2F4F4F;
   border-radius: 8px;
-  background-color: #2F4F4F;
+  background-color: #OD5EAF;
 }
 
 h.menu_item {
