@@ -4,8 +4,9 @@
 
 /* Style the body */
 body {
-color:#ffffff;
-background-color:#000000;
+  height: 100%;
+  color:#ffffff;
+  background-color:#000000;
   font-family: Arial;
   margin: 0;
 }
@@ -102,6 +103,7 @@ border-radius: 10px;
 .main {
   flex: 70%;
   padding: 20px;
+  height: 100%;
 }
 
 /* Menu items */
