@@ -103,6 +103,13 @@ border-radius: 10px;
   flex: 70%;
   padding: 20px;
 }
+/* Menu items */
+.menu_item {
+border: 2px solid #OD5EAF;
+  border-radius: 8px;
+  background-color: #A9A9A9;
+
+}
 
 /* Footer */
 .footer {
