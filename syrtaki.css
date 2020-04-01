@@ -109,10 +109,10 @@ border-radius: 10px;
 border: 2px solid #OD5EAF;
   border-radius: 8px;
   background-color: #2F4F4F;
-margin-left: 10px;
 }
 
 h.menu_item {
+  font-weight: bold;
 margin-left: 10px;
 }
 
