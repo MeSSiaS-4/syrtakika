@@ -33,8 +33,6 @@ body {
 
 /* Header logo Title */
 .header {
-  border-top: 5px solid #000000;
-  border-bottom: 5px solid #000000;
   padding: 60px;
   text-align: center;
   background: #000000;
