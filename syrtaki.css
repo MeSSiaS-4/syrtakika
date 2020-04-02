@@ -101,8 +101,6 @@ border-radius: 10px;
 /* Main column */
 .main {
   flex: 70%;
-  padding: 200px;
-  position: fixed; /*or fixed*/
 }
 
 /* Menu items */
