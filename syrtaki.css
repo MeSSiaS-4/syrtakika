@@ -58,6 +58,7 @@ body {
 
 /* Style the navigation bar paragrafs */
 p.navbar {
+  margin: 0px;
   padding: 14px 20px;
   text-align: center;
   text-decoration: none;
