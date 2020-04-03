@@ -67,11 +67,6 @@ body {
   text-decoration: none;
   text-align: left;
   background-color: #0D5EAF;
-  padding-top: 1px;
-  padding-right: 2px;
-  padding-bottom: 1px;
-  padding-left: 2px;
-  margin-top: 10px;
 }
 
 /* Style the side bar links on hover */
@@ -81,11 +76,6 @@ body {
  color: #d4af37;
  background-color: #000000;
  text-decoration: none;
- padding-top: 1px;
- padding-right: 2px;
- padding-bottom: 1px;
- padding-left: 2px;
- margin-top: 10px;
 }
 
 /* Change color on hover */
