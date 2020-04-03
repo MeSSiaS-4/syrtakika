@@ -67,10 +67,10 @@ body {
   text-decoration: none;
   text-align: left;
   background-color: #0D5EAF;
-  padding-top: 5px;
-  padding-right: 3px;
-  padding-bottom: 5px;
-  padding-left: 3px;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
 }
 
 /* Style the side bar links on hover */
@@ -80,10 +80,10 @@ body {
  color: #d4af37;
  background-color: #000000;
  text-decoration: none;
- padding-top: 3px;
- padding-right: 3px;
- padding-bottom: 5px;
- padding-left: 3px;
+ padding-top: 2px;
+ padding-right: 2px;
+ padding-bottom: 2px;
+ padding-left: 2px;
 }
 
 /* Change color on hover */
