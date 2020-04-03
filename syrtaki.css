@@ -54,12 +54,11 @@ body {
 .navbar {
   display: flex;
   background-color: #0D5EAF;
-  padding: 14px 20px;
 }
 
 /* Style the navigation bar paragrafs */
 .navbar p {
-  padding: 0px 0px;
+  padding: 140px 20px;
   text-align: center;
   text-decoration: none;
 }
