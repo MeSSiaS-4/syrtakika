@@ -67,15 +67,23 @@ body {
   text-decoration: none;
   text-align: left;
   background-color: #0D5EAF;
+  padding-top: 5px;
+  padding-right: 3px;
+  padding-bottom: 5px;
+  padding-left: 3px;
 }
 
 /* Style the side bar links on hover */
 .side a:hover {
- border-width: 1px 1px;
+ border-width: 1px;
  border-style: solid;
  color: #d4af37;
  background-color: #000000;
  text-decoration: none;
+ padding-top: 5px;
+ padding-right: 3px;
+ padding-bottom: 5px;
+ padding-left: 3px;
 }
 
 /* Change color on hover */
