@@ -80,7 +80,7 @@ body {
  color: #d4af37;
  background-color: #000000;
  text-decoration: none;
- padding-top: 5px;
+ padding-top: 3px;
  padding-right: 3px;
  padding-bottom: 5px;
  padding-left: 3px;
@@ -106,7 +106,7 @@ border-radius: 10px;
 /* Sidebar/left column */
 .side {
 margin-left: 0px;
-margin-top: 20px;
+margin-top: 10px;
 margin-bot: 10px;
 padding: 20px;
   flex: 30%;
