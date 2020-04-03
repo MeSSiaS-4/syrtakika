@@ -39,6 +39,13 @@ body {
   color: #ffffff;
 }
 
+.site_logo {
+  width: 50%;
+  hight: 50%,
+  max-width: 200px;
+  max-hight: 150px;
+}
+
 /* Style the top navigation bar */
 .navbar {
   display: flex;
