@@ -65,6 +65,7 @@ body {
    color: #ffffff;
   text-decoration: none;
   text-align: left;
+  background-color: #0D5EAF;
 }
 
 /* Style the side bar links on hover */
@@ -103,7 +104,6 @@ padding: 20px;
   margin-top: 10px;
 text-align: left;
 border-radius: 10px;
-background-color: #0D5EAF;
 }
 
 /* Main column */
