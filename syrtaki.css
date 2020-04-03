@@ -59,16 +59,17 @@ body {
 
 /* Style the navigation bar paragrafs */
 .navbar p {
-  text-decoration: none;
+  padding: 0px 0px;
   text-align: center;
+  text-decoration: none;
 }
 
 /* Style the navigation bar links */
 .navbar a {
   color: #ffffff;
   padding: 14px 20px;
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
 }
 
 /* Style the side bar links */
