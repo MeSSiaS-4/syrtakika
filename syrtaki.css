@@ -67,6 +67,8 @@ body {
   text-decoration: none;
   text-align: left;
   background-color: #0D5EAF;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
 /* Style the side bar links on hover */
@@ -76,6 +78,8 @@ body {
  color: #d4af37;
  background-color: #000000;
  text-decoration: none;
+ padding-right: 2px;
+ padding-left: 2px;
 }
 
 /* Change color on hover */
