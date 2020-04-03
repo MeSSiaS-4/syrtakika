@@ -62,7 +62,8 @@ body {
 
 /* Style the side bar links */
 .side a {
-   color: #ffffff;
+  border: 1px solid black;
+  color: #ffffff;
   text-decoration: none;
   text-align: left;
   background-color: #0D5EAF;
@@ -70,7 +71,7 @@ body {
 
 /* Style the side bar links on hover */
 .side a:hover {
- border-width: 1px 3px;
+ border-width: 1px 1px;
  border-style: solid;
  color: #d4af37;
  background-color: #000000;
