@@ -56,7 +56,7 @@ body {
   background-color: #0D5EAF;
   padding: 14px 20px;
   text-decoration: none;
-  text-align: center;
+  align: center;
 }
 
 /* Style the navigation bar links */
