@@ -32,77 +32,6 @@
 		document.documentElement.scrollTop = 0;
 	}
 	
-	<!-- Script from item prices -->
-	function readfileautomatically () {
-		var client = new XMLHttpRequest();
-		client.open("GET", "https://raw.githubusercontent.com/MeSSiaS-4/test-syrtaki-ka/master/times.txt");
-		client.onreadystatechange = function() {
-			if( client.responseText != '' ) {
-				var txt = client.responseText.split("\n");
-				document.getElementById("line1").innerHTML = txt[0];
-document.getElementById("line2").innerHTML = txt[1];
-document.getElementById("line3").innerHTML = txt[2];
-document.getElementById("line4").innerHTML = txt[3];
-document.getElementById("line5").innerHTML = txt[4];
-document.getElementById("line6").innerHTML = txt[5];
-document.getElementById("line7").innerHTML = txt[6];
-document.getElementById("line8").innerHTML = txt[7];
-document.getElementById("line9").innerHTML = txt[8];
-document.getElementById("line10").innerHTML = txt[9];
-document.getElementById("line11").innerHTML = txt[10];
-document.getElementById("line12").innerHTML = txt[11];
-document.getElementById("line13").innerHTML = txt[12];
-document.getElementById("line14").innerHTML = txt[13];
-document.getElementById("line15").innerHTML = txt[14];
-document.getElementById("line16").innerHTML = txt[15];
-document.getElementById("line17").innerHTML = txt[16];
-document.getElementById("line18").innerHTML = txt[17];
-document.getElementById("line19").innerHTML = txt[18];
-document.getElementById("line20").innerHTML = txt[19];
-document.getElementById("line21").innerHTML = txt[20];
-document.getElementById("line22").innerHTML = txt[21];
-document.getElementById("line23").innerHTML = txt[22];
-document.getElementById("line24").innerHTML = txt[23];
-document.getElementById("line25").innerHTML = txt[24];
-document.getElementById("line26").innerHTML = txt[25];
-document.getElementById("line27").innerHTML = txt[26];
-document.getElementById("line28").innerHTML = txt[27];
-document.getElementById("line29").innerHTML = txt[28];
-				document.getElementById("line30").innerHTML = txt[29];
-document.getElementById("line31").innerHTML = txt[30];
-document.getElementById("line32").innerHTML = txt[31];
-document.getElementById("line33").innerHTML = txt[32];
-document.getElementById("line34").innerHTML = txt[33];
-document.getElementById("line35").innerHTML = txt[34];
-document.getElementById("line36").innerHTML = txt[35];
-document.getElementById("line37").innerHTML = txt[36];
-document.getElementById("line38").innerHTML = txt[37];
-document.getElementById("line39").innerHTML = txt[38];
-document.getElementById("line40").innerHTML = txt[39];
-document.getElementById("line41").innerHTML = txt[40];
-document.getElementById("line42").innerHTML = txt[41];
-document.getElementById("line43").innerHTML = txt[42];
-document.getElementById("line44").innerHTML = txt[43];
-document.getElementById("line45").innerHTML = txt[44];
-document.getElementById("line46").innerHTML = txt[45];
-document.getElementById("line47").innerHTML = txt[46];
-document.getElementById("line48").innerHTML = txt[47];
-document.getElementById("line49").innerHTML = txt[48];
-document.getElementById("line50").innerHTML = txt[49];
-document.getElementById("line51").innerHTML = txt[50];
-document.getElementById("line52").innerHTML = txt[51];
-document.getElementById("line53").innerHTML = txt[52];
-document.getElementById("line54").innerHTML = txt[53];
-document.getElementById("line55").innerHTML = txt[54];
-document.getElementById("line56").innerHTML = txt[55];
-document.getElementById("line57").innerHTML = txt[56];
-document.getElementById("line58").innerHTML = txt[57];
-document.getElementById("line59").innerHTML = txt[58];
-
-			}
-		}
-		client.send();
-	}
     </script>
   
   <!-- Header -->
@@ -146,34 +75,34 @@ document.getElementById("line59").innerHTML = txt[58];
     <!-- main content categoris & item list & item info -->
     <div class="main">
       <div class="menu_item" id="vorspeisen"><h class="menu_item">Vorspeisen</h><hr>
-        <div class="item_name">7. Zaziki (Quark , Knoblauch , Gurken und Gewürze)</div><p class="item_price" id="line7"></p><br>
-        <div class="item_name">8. Feta-Käse (natur, kalt)</div><div id="line8"></div><p class="item_price" id="line8"></p><br>
+        <div class="item_name">7. Zaziki (Quark , Knoblauch , Gurken und Gewürze)</div><p class="item_price">4,10 €</p><br>
+        <div class="item_name">8. Feta-Käse (natur, kalt)</div><div id="line8"></div><p class="item_price">6,50 €</p><br>
         <div class="item_info">mit Krautsalat</div><br>
-        <div class="item_name">9. Saganaki (Feta-Käse paniert, warm)</div><p class="item_price" id="line9"></p><br> 
+        <div class="item_name">9. Saganaki (Feta-Käse paniert, warm)</div><p class="item_price">7,00 €</p><br> 
         <div class="item_info">mit Krautsalat</div><br>
-        <div class="item_name">10. Oktapussalat (Krake)</div><p class="item_price" id="line10"></p><br>
-        <div class="item_name">11. Dolmades (hausgemacht, warm)</div><p class="item_price" id="line11"></p><br>
+        <div class="item_name">10. Oktapussalat (Krake)</div><p class="item_price">8,50 €</p><br>
+        <div class="item_name">11. Dolmades (hausgemacht, warm)</div><p class="item_price">5,90 €</p><br>
         <div class="item_info">gefüllte Weinblätter mit Reis und Schweinehackfleisch</div><br>
-        <div class="item_name">12. Kalamarisalat (Tintenfisch)</div><p class="item_price" id="line12"></p><br>
-        <div class="item_name">13. Vorspeisenteller für 1 Person</div><p class="item_price" id="line13"></p><br>
+        <div class="item_name">12. Kalamarisalat (Tintenfisch)</div><p class="item_price">7,50 €</p><br>
+        <div class="item_name">13. Vorspeisenteller für 1 Person</div><p class="item_price">9,90 €</p><br>
         <div class="item_info">Anzahl verschiedener Vorspeisen</div><br>
-        <div class="item_name">14. Vorspeisenteller für 2 Personen</div><p class="item_price" id="line14"></p><br>
+        <div class="item_name">14. Vorspeisenteller für 2 Personen</div><p class="item_price">17,50 €</p><br>
         <div class="item_info">Anzahl verschiedener Vorspeisen</div><br>
-        <div class="item_name">15.Auberginensalat (Auberginen Mousse)</div><p class="item_price" id="line15"></p><br>
-        <div class="item_name">16. Gebratene Auberginen mit Zaziki</div><p class="item_price" id="line16"></p><br>
-        <div class="item_name">17. Zart gegrillte peperoni mit knoblauch</div><p class="item_price" id="line17"></p><br>
-        <div class="item_name">18. Shripscocktail (Krabben)</div><p class="item_price" id="line18"></p><br>
-        <div class="item_name">19. Taramasalat (Fischeier Mousse)</div><p class="item_price" id="line19"></p><br>
-        <div class="item_name">20. Griechische dicke Bohnen</div><p class="item_price" id="line20"></p><br>
-        <div class="item_name">21. Melzanes (Auberginen im Tomatensauce, warm)</div><p class="item_price" id="line21"></p><br>
-        <div class="item_name">22. Feta-Käse (gegrillt) mit Tomaten</div><p class="item_price" id="line22"></p><br>
-        <div class="item_name">23. Knoblauchbrot</div><p class="item_price" id="line23"></p><br>
-        <div class="item_name">24. Knoblauchbrot mit Tomaten und Käse</div><p class="item_price" id="line24"></p><br>
-        <div class="item_name">25. Gegratene Zuchini mit Zaziki</div><p class="item_price" id="line25"></p><br>
-        <div class="item_name">28. Oktapus (gegrillt) mit Tomaten und Zaziki</div><p class="item_price" id="line28"></p><br>
-        <div class="item_name">29. Sardinen (gebraten/paniert)</div><p class="item_price" id="line29"></p><br>
-        <div class="item_name">48. Pitabrot (Fladenbrot)</div><p class="item_price" id="line48"></p><br>
-        <div class="item_name">49. Pitabrot mit Knoblauch</div><p class="item_price" id="line29"></p><br>
+        <div class="item_name">15.Auberginensalat (Auberginen Mousse)</div><p class="item_price">5,40 €</p><br>
+        <div class="item_name">16. Gebratene Auberginen mit Zaziki</div><p class="item_price">6,50 €</p><br>
+        <div class="item_name">17. Zart gegrillte peperoni mit knoblauch</div><p class="item_price">6,50 €</p><br>
+        <div class="item_name">18. Shripscocktail (Krabben)</div><p class="item_price">8,50 €</p><br>
+        <div class="item_name">19. Taramasalat (Fischeier Mousse)</div><p class="item_price">5,40 €</p><br>
+        <div class="item_name">20. Griechische dicke Bohnen</div><p class="item_price">4,20 €</p><br>
+        <div class="item_name">21. Melzanes (Auberginen im Tomatensauce, warm)</div><p class="item_price">4,20 €</p><br>
+        <div class="item_name">22. Feta-Käse (gegrillt) mit Tomaten</div><p class="item_price">7,50 €</p><br>
+        <div class="item_name">23. Knoblauchbrot</div><p class="item_price">2,30 €</p><br>
+        <div class="item_name">24. Knoblauchbrot mit Tomaten und Käse</div><p class="item_price">4,50 €</p><br>
+        <div class="item_name">25. Gegratene Zuchini mit Zaziki</div><p class="item_price">6,50 €</p><br>
+        <div class="item_name">28. Oktapus (gegrillt) mit Tomaten und Zaziki</div><p class="item_price">11,00 €</p><br>
+        <div class="item_name">29. Sardinen (gebraten/paniert)</div><p class="item_price">7,50 €</p><br>
+        <div class="item_name">48. Pitabrot (Fladenbrot)</div><p class="item_price">2,30 €</p><br>
+        <div class="item_name">49. Pitabrot mit Knoblauch</div><p class="item_price">2,50</p><br>
       </div><br>
   
       <div class="menu_item" id="suppen"><h class="menu_item">Suppen</h><hr>
