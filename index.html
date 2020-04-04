@@ -9,49 +9,43 @@
 
   </style>
 </head>
-	//EDO DOAGRAFI
-	
 <body onload="readfileautomatically();">
   
   <!-- Scroll back to top button -->
   <button onclick="topFunction()" id="GoToTop" title="Go to top"><b>↑</b> Go UP <b>↑</b></button>
     <script>
-      <!-- Get the button -->
-      var mybutton = document.getElementById("GoToTop");
-      <!-- When the user scrolls down 20px from the top of the document, show the button -->
-      window.onscroll = function() {scrollFunction()};
+	<!-- Get the button -->
+    	var mybutton = document.getElementById("GoToTop");
+	<!-- When the user scrolls down 20px from the top of the document, show the button -->
+	window.onscroll = function() {scrollFunction()};
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      <!-- When the user clicks on the button, scroll to the top of the document -->
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-	    
-	    //EDO DIAGRAFI
-	    function readfileautomatically () {
-        var client = new XMLHttpRequest();
-        client.open('GET', 'times.txt');
-        client.onreadystatechange = function()
-        {
-            if( client.responseText != '' )
-            {
-                var txt = client.responseText.split("\n");
-                document.getElementById("line1").innerHTML = txt[0];
-                document.getElementById("line3").innerHTML = txt[2];
-            }
-        }
-        client.send();
-    }
-	    
-	    
-     </script>
+	function scrollFunction() {
+	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+		mybutton.style.display = "block";
+	} else {
+		mybutton.style.display = "none";
+		}
+	}
+	<!-- When the user clicks on the button, scroll to the top of the document -->
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+	
+	<!-- Script from item prices -->
+	function readfileautomatically () {
+		var client = new XMLHttpRequest();
+		client.open('GET', 'times.txt');
+		client.onreadystatechange = function() {
+			if( client.responseText != '' ) {
+				var txt = client.responseText.split("\n");
+				document.getElementById("line1").innerHTML = txt[0];
+				document.getElementById("line3").innerHTML = txt[2];
+			}
+		}
+		client.send();
+	}
+    </script>
   
   <!-- Header -->
   <div class="header" id="header">
@@ -66,11 +60,6 @@
 <!-- <a href="#">Link</a> -->
 <!-- <a href="#">Link</a> -->
     <p class="navbar">Restaurant SYRTAKI  -  Herenstr. 36, 76133 Karlsruhe  -  Tel: 0721 21514</p>
-	  
-	  //EDO DIAGRAFI
-	  <div id="line1"></div>
-<div id="line3"></div>
-	  
   </div><br>
 
   <!-- The flexible grid (content) -->
@@ -99,34 +88,34 @@
     <!-- main content categoris & item list & item info -->
     <div class="main">
       <div class="menu_item" id="vorspeisen"><h class="menu_item">Vorspeisen</h><hr>
-        <div class="item_name">7. Zaziki (Quark , Knoblauch , Gurken und Gewürze)</div><br>
-        <div class="item_name">8. Feta-Käse (natur, kalt)</div><br>
+        <div class="item_name">7. Zaziki (Quark , Knoblauch , Gurken und Gewürze)</div><div id="line7"></div><br>
+        <div class="item_name">8. Feta-Käse (natur, kalt)</div><div id="line8"></div><br>
         <div class="item_info">mit Krautsalat</div><br>
-        <div class="item_name">9. Saganaki (Feta-Käse paniert, warm)</div><br> 
+        <div class="item_name">9. Saganaki (Feta-Käse paniert, warm)</div><div id="line9"></div><br> 
         <div class="item_info">mit Krautsalat</div><br>
-        <div class="item_name">10. Oktapussalat (Krake)</div><br>
-        <div class="item_name">11. Dolmades (hausgemacht, warm)</div><br>
+        <div class="item_name">10. Oktapussalat (Krake)</div><div id="line10"></div><br>
+        <div class="item_name">11. Dolmades (hausgemacht, warm)</div><div id="line11"></div><br>
         <div class="item_info">gefüllte Weinblätter mit Reis und Schweinehackfleisch</div><br>
-        <div class="item_name">12. Kalamarisalat (Tintenfisch)</div><br>
-        <div class="item_name">13. Vorspeisenteller für 1 Person</div><br>
+        <div class="item_name">12. Kalamarisalat (Tintenfisch)</div><div id="line12"></div><br>
+        <div class="item_name">13. Vorspeisenteller für 1 Person</div><div id="line13"></div><br>
         <div class="item_info">Anzahl verschiedener Vorspeisen</div><br>
-        <div class="item_name">14. Vorspeisenteller für 2 Personen</div><br>
+        <div class="item_name">14. Vorspeisenteller für 2 Personen</div><div id="line14"></div><br>
         <div class="item_info">Anzahl verschiedener Vorspeisen</div><br>
-        <div class="item_name">15.Auberginensalat (Auberginen Mousse)</div><br>
-        <div class="item_name">16. Gebratene Auberginen mit Zaziki</div><br>
-        <div class="item_name">17. Zart gegrillte peperoni mit knoblauch</div><br>
-        <div class="item_name">18. Shripscocktail (Krabben)</div><br>
-        <div class="item_name">19. Taramasalat (Fischeier Mousse)</div><br>
-        <div class="item_name">20. Griechische dicke Bohnen</div><br>
-        <div class="item_name">21. Melzanes (Auberginen im Tomatensauce, warm)</div><br>
-        <div class="item_name">22. Feta-Käse (gegrillt) mit Tomaten</div><br>
-        <div class="item_name">23. Knoblauchbrot</div><br>
-        <div class="item_name">24. Knoblauchbrot mit Tomaten und Käse</div><br>
-        <div class="item_name">25. Gegratene Zuchini mit Zaziki</div><br>
-        <div class="item_name">28. Oktapus (gegrillt) mit Tomaten und Zaziki</div><br>
-        <div class="item_name">29. Sardinen (gebraten/paniert)</div><br>
-        <div class="item_name">48. Pitabrot (Fladenbrot)</div><br>
-        <div class="item_name">49. Pitabrot mit Knoblauch</div><br>
+        <div class="item_name">15.Auberginensalat (Auberginen Mousse)</div><div id="line15"></div><br>
+        <div class="item_name">16. Gebratene Auberginen mit Zaziki</div><div id="line"16></div><br>
+        <div class="item_name">17. Zart gegrillte peperoni mit knoblauch</div><div id="line17"></div><br>
+        <div class="item_name">18. Shripscocktail (Krabben)</div><div id="line18"></div><br>
+        <div class="item_name">19. Taramasalat (Fischeier Mousse)</div><div id="line19"></div><br>
+        <div class="item_name">20. Griechische dicke Bohnen</div><div id="line20"></div><br>
+        <div class="item_name">21. Melzanes (Auberginen im Tomatensauce, warm)</div><div id="line21"></div><br>
+        <div class="item_name">22. Feta-Käse (gegrillt) mit Tomaten</div><div id="line22"></div><br>
+        <div class="item_name">23. Knoblauchbrot</div><div id="line23"></div><br>
+        <div class="item_name">24. Knoblauchbrot mit Tomaten und Käse</div><div id="line24"></div><br>
+        <div class="item_name">25. Gegratene Zuchini mit Zaziki</div><div id="line25"></div><br>
+        <div class="item_name">28. Oktapus (gegrillt) mit Tomaten und Zaziki</div><div id="line28"></div><br>
+        <div class="item_name">29. Sardinen (gebraten/paniert)</div><div id="line29"></div><br>
+        <div class="item_name">48. Pitabrot (Fladenbrot)</div><div id="line"></div>48<br>
+        <div class="item_name">49. Pitabrot mit Knoblauch</div><div id="line49"></div><br>
       </div><br>
   
       <div class="menu_item" id="suppen"><h class="menu_item">Suppen</h><hr>
