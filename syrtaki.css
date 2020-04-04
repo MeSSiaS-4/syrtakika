@@ -131,7 +131,6 @@ p.navbar {
 /* Menu items */
 
 .menu_item {
-  display: inline-block;
   border: 2px solid #0D5EAF;
   border-radius: 8px;
   background-color: #0D5EAF;
@@ -147,6 +146,17 @@ h.menu_item {
 /* Name of item & info for the item */
 
 .item_name {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-bottom: -12px;
+  margin-top: -5px;
+}
+
+.item_price {
+  vertical-align:top;
+  display: inline-block;
   color: #ffffff;
   font-weight: bold;
   margin-left: 5px;
@@ -158,8 +168,6 @@ h.menu_item {
   color: #ffffff;
   margin-left: 20px;
   margin-top: -7px;
-  vertical-align:top;
-  display: inline-block;
 }
 
 
