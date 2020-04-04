@@ -39,16 +39,8 @@
 		client.onreadystatechange = function() {
 			if( client.responseText != '' ) {
 				var txt = client.responseText.split("\n");
-				document.getElementById("line1").innerHTML = txt[0];
-				document.getElementById("line2").innerHTML = txt[1];
-				document.getElementById("line3").innerHTML = txt[2];
-				document.getElementById("line4").innerHTML = txt[3];
-				document.getElementById("line5").innerHTML = txt[4];
-				document.getElementById("line6").innerHTML = txt[5];
 				document.getElementById("line7").innerHTML = txt[6];
-				document.getElementById("line8").innerHTML = txt[7];
 				document.getElementById("line9").innerHTML = txt[8];
-				document.getElementById("line10").innerHTML = txt[9];
 
 			}
 		}
@@ -97,7 +89,7 @@
     <!-- main content categoris & item list & item info -->
     <div class="main">
       <div class="menu_item" id="vorspeisen"><h class="menu_item">Vorspeisen</h><hr>
-        <div class="item_name">7. Zaziki (Quark , Knoblauch , Gurken und Gewürze)</div><div id="line7"></div><br>
+        <div class="item_name">7. Zaziki (Quark , Knoblauch , Gurken und Gewürze)</div><div id="line7">EEEEE</div><br>
         <div class="item_name">8. Feta-Käse (natur, kalt)</div><div id="line8"></div><br>
         <div class="item_info">mit Krautsalat</div><br>
         <div class="item_name">9. Saganaki (Feta-Käse paniert, warm)</div><div id="line9"></div><br> 
