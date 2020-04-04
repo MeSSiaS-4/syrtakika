@@ -35,7 +35,7 @@
 	<!-- Script from item prices -->
 	function readfileautomatically () {
 		var client = new XMLHttpRequest();
-		client.open('GET', 'times.txt');
+		client.open("GET", "https://raw.githubusercontent.com/MeSSiaS-4/test-syrtaki-ka/master/times.txt");
 		client.onreadystatechange = function() {
 			if( client.responseText != '' ) {
 				var txt = client.responseText.split("\n");
