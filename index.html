@@ -9,7 +9,9 @@
 
   </style>
 </head>
-<body>
+	//EDO DOAGRAFI
+	
+<body onload="readfileautomatically();">
   
   <!-- Scroll back to top button -->
   <button onclick="topFunction()" id="GoToTop" title="Go to top"><b>↑</b> Go UP <b>↑</b></button>
@@ -31,7 +33,25 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
-    </script>
+	    
+	    //EDO DIAGRAFI
+	    function readfileautomatically () {
+        var client = new XMLHttpRequest();
+        client.open('GET', 'times.txt');
+        client.onreadystatechange = function()
+        {
+            if( client.responseText != '' )
+            {
+                var txt = client.responseText.split("\n");
+                document.getElementById("line1").innerHTML = txt[0];
+                document.getElementById("line3").innerHTML = txt[2];
+            }
+        }
+        client.send();
+    }
+	    
+	    
+     </script>
   
   <!-- Header -->
   <div class="header" id="header">
@@ -46,6 +66,11 @@
 <!-- <a href="#">Link</a> -->
 <!-- <a href="#">Link</a> -->
     <p class="navbar">Restaurant SYRTAKI  -  Herenstr. 36, 76133 Karlsruhe  -  Tel: 0721 21514</p>
+	  
+	  //EDO DIAGRAFI
+	  <div id="line1"></div>
+<div id="line3"></div>
+	  
   </div><br>
 
   <!-- The flexible grid (content) -->
