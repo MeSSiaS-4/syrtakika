@@ -131,6 +131,7 @@ p.navbar {
 /* Menu items */
 
 .menu_item {
+  display: inline-block;
   border: 2px solid #0D5EAF;
   border-radius: 8px;
   background-color: #0D5EAF;
@@ -157,7 +158,8 @@ h.menu_item {
   color: #ffffff;
   margin-left: 20px;
   margin-top: -7px;
-  
+  vertical-align:top;
+  display: inline-block;
 }
 
 
