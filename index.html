@@ -40,8 +40,16 @@
 			if( client.responseText != '' ) {
 				var txt = client.responseText.split("\n");
 				document.getElementById("line1").innerHTML = txt[0];
+				document.getElementById("line2").innerHTML = txt[1];
 				document.getElementById("line3").innerHTML = txt[2];
-				document.getElementById("line7").innerHTML = txt[2];
+				document.getElementById("line4").innerHTML = txt[3];
+				document.getElementById("line5").innerHTML = txt[4];
+				document.getElementById("line6").innerHTML = txt[5];
+				document.getElementById("line7").innerHTML = txt[6];
+				document.getElementById("line8").innerHTML = txt[7];
+				document.getElementById("line9").innerHTML = txt[8];
+				document.getElementById("line10").innerHTML = txt[9];
+
 			}
 		}
 		client.send();
