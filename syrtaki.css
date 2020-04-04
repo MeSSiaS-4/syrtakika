@@ -96,12 +96,12 @@ p.navbar {
 
 /* Change color on hover */
 .navbar a:hover {
-border-radius: 10px;
- border-width: 1px 3px;
- border-style: solid;
- color: #d4af37;
- background-color: #000000;
- text-decoration: none;
+  border-radius: 10px;
+  border-width: 1px 3px;
+  border-style: solid;
+  color: #d4af37;
+  background-color: #000000;
+  text-decoration: none;
 }
 
 /* Column container */
@@ -113,14 +113,14 @@ border-radius: 10px;
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-margin-left: 0px;
-margin-top: 10px;
-margin-bot: 10px;
-padding: 20px;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bot: 10px;
+  padding: 20px;
   flex: 30%;
   margin-top: 10px;
-text-align: left;
-border-radius: 10px;
+  text-align: left;
+  border-radius: 10px;
 }
 
 /* Main column */
@@ -140,7 +140,7 @@ h.menu_item {
   border: none;
   color: #ffffff;
   font-weight: bold;
-margin-left: 10px;
+  margin-left: 10px;
 }
 
 /* Name of item & info for the item */
@@ -149,7 +149,7 @@ margin-left: 10px;
   color: #ffffff;
   font-weight: bold;
   margin-left: 5px;
-  margin-bottom: -10px;
+  margin-bottom: -14px;
 }
 
 .item_info {
