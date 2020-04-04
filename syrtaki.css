@@ -155,7 +155,7 @@ h.menu_item {
 }
 
 .item_price {
-  vertical-align:top;
+  vertical-align:center;
   display: inline-block;
   color: #ffffff;
   font-weight: bold;
