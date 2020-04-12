@@ -54,6 +54,7 @@ body {
 .navbar {
   display: flex;
   background-color: #0D5EAF;
+  align: center;
 }
 
 /* Style the navigation bar paragrafs */
