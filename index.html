@@ -6,13 +6,13 @@
 
   </head>
   
-<body class="body">
+<body class="body" onload="StartSeiteLoad()">
   <script>
     function openMenuItem(event, ItemName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "Startseite";
+        tabcontent[i].style.display = "none";
       }
       tablinks = document.getElementsByClassName("tablinks");
       for (i = 0; i < tablinks.length; i++) {
@@ -20,6 +20,10 @@
       }
       document.getElementById(ItemName).style.display = "block";
       evt.currentTarget.className += " active";
+    }
+    
+        function StartSeiteLoad() {
+          openMenuItem(event, 'Startseite')
     }
   </script>
   
