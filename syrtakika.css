@@ -52,3 +52,11 @@
 .KontaktText {
   text-align: center;
   }
+
+#container {
+  text-align:center;
+  }
+#bloc1, #bloc2 {
+  display:inline;
+  }
+
