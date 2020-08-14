@@ -25,6 +25,24 @@
         function StartSeiteLoad() {
           openMenuItem(event, 'Startseite');
     }
+    
+    function openSpeisekarte(event, ItemName) {
+      var i, menusite, menusub;
+      menusite = document.getElementsByClassName("menusite");
+      for (i = 0; i < menusite.length; i++) {
+        menusite[i].style.display = "none";
+      }
+      menusub = document.getElementsByClassName("menusub");
+      for (i = 0; i < menusub.length; i++) {
+        menusub[i].className = menususb[i].className.replace(" active", "");
+      }
+      document.getElementById(ItemName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+        function StartSeiteLoad() {
+          openMenuItem(event, 'Startseite');
+    }
   </script>
   
   <div class="Logo">
@@ -47,7 +65,16 @@
   </div>
   
   <div id="Speisekarte" class="tabcontent">
-    <h3>Speisekarte</h3>
+  
+    <div class="tab">
+      <button class="tablinks" onclick="openMenuItem(event, 'Vorspeise')">Vorspeise</button>
+      <button class="tablinks" onclick="openMenuItem(event, 'SpVG')">Spezialiteten vom Grill</button>
+      <button class="tablinks" onclick="openMenuItem(event, 'Steaks')">steaks</button>
+      <button class="tablinks" onclick="openMenuItem(event, 'Fu2Per')">Fur 2 personene</button>
+      <button class="tablinks" onclick="openMenuItem(event, 'Fu4Per')">Fur 4 Personene</button>
+      <button class="tablinks" onclick="openMenuItem(event, 'AuDeBa')">Aus dem Backofen</button>
+    </div><br>
+  
   </div>
   
   <div id="Tokyo" class="tabcontent">
