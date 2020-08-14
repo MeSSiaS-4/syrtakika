@@ -54,9 +54,11 @@
   }
 
 #container {
-  text-align:center;
+  display: flex;
+  justify-content: center;
   }
-#bloc1, #bloc2 {
+
+#dbloc1, #dbloc2 {
   display:inline;
   }
 
