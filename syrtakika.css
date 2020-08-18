@@ -54,4 +54,6 @@
 .menusite {
   line-height: 1.6;
   font-size: 13px;
+  background-color: black;
+  opacity: 0.5;
   }
