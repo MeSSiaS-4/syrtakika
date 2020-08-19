@@ -54,7 +54,6 @@
 .menusite {
   white-space: pre;
   line-height: 1.6;
-  font-size: 30px;
   background-color: #040D45;
 
   }
@@ -65,6 +64,7 @@
   line-height: 1.6;
   padding-right: 3px;
   background-color: #040D45;
+  font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre;
   float: left;
