@@ -26,6 +26,20 @@
           openMenuItem(event, 'Startseite');
     }
     
+        function openMenuItem2(event, ItemName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(ItemName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
 
 
   </script>
@@ -52,16 +66,16 @@
   <div id="Speisekarte" class="tabcontent">
   
     <div class="tab">
-      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite1')">Vorspeise/Supen</button>
-      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite2')">Omeletts/Beilagen/Salate</button>
-      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite3')">Spezialitäten vom Grill (1)</button>
-      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite4')">Spezialitäten vom Grill (2)</button>
-      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite5')">Steaks/Für 2 und 4 Personen</button>
-      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite6')">Spaghetti/Aus dem Backofen/Vegetarisch</button>
-      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite7')">Besonderen Empfehlungen/Fisch</button>
-      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite8')">Für kleinen Gäste/Pizza</button>
-      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite9')">Dessert</button>
-      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite10')">Mittagskarte</button>
+      <button class="tablinks" onclick="openMenuItem2(event, 'Seite1')">Vorspeise/Supen</button>
+      <button class="tablinks" onclick="openMenuItem2(event, 'Seite2')">Omeletts/Beilagen/Salate</button>
+      <button class="tablinks" onclick="openMenuItem2(event, 'Seite3')">Spezialitäten vom Grill (1)</button>
+      <button class="tablinks" onclick="openMenuItem2(event, 'Seite4')">Spezialitäten vom Grill (2)</button>
+      <button class="tablinks" onclick="openMenuItem2(event, 'Seite5')">Steaks/Für 2 und 4 Personen</button>
+      <button class="tablinks" onclick="openMenuItem2(event, 'Seite6')">Spaghetti/Aus dem Backofen/Vegetarisch</button>
+      <button class="tablinks" onclick="openMenuItem2(event, 'Seite7')">Besonderen Empfehlungen/Fisch</button>
+      <button class="tablinks" onclick="openMenuItem2(event, 'Seite8')">Für kleinen Gäste/Pizza</button>
+      <button class="tablinks" onclick="openMenuItem2(event, 'Seite9')">Dessert</button>
+      <button class="tablinks" onclick="openMenuItem2(event, 'Seite10')">Mittagskarte</button>
     </div><br>
     
     <div id="Seite1" class="tabcontent">
