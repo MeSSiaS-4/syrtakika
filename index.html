@@ -28,17 +28,7 @@
     
     function openSpeisekarte(event, ItemName) {
       var i, menusite, menusub;
-      menusite = document.getElementsByClassName("menusite");
-      for (i = 0; i < menusite.length; i++) {
-        menusite[i].style.display = "none";
-      }
-      menusub = document.getElementsByClassName("menusub");
-      for (i = 0; i < menusub.length; i++) {
-        menusub[i].className = menususb[i].className.replace(" active", "");
-      }
-      document.getElementById(ItemName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
+
   </script>
   
   <div class="Logo">
@@ -63,19 +53,19 @@
   <div id="Speisekarte" class="tabcontent">
   
     <div class="tab">
-      <button class="menusub" onclick="openSpeisekarte(event, 'Seite1')">Vorspeise/Supen</button>
-      <button class="menusub" onclick="openSpeisekarte(event, 'Seite2')">Omeletts/Beilagen/Salate</button>
-      <button class="menusub" onclick="openSpeisekarte(event, 'Seite3')">Spezialitäten vom Grill (1)</button>
-      <button class="menusub" onclick="openSpeisekarte(event, 'Seite4')">Spezialitäten vom Grill (2)</button>
-      <button class="menusub" onclick="openSpeisekarte(event, 'Seite5')">Steaks/Für 2 und 4 Personen</button>
-      <button class="menusub" onclick="openSpeisekarte(event, 'Seite6')">Spaghetti/Aus dem Backofen/Vegetarisch</button>
-      <button class="menusub" onclick="openSpeisekarte(event, 'Seite7')">Besonderen Empfehlungen/Fisch</button>
-      <button class="menusub" onclick="openSpeisekarte(event, 'Seite8')">Für kleinen Gäste/Pizza</button>
-      <button class="menusub" onclick="openSpeisekarte(event, 'Seite9')">Dessert</button>
-      <button class="menusub" onclick="openSpeisekarte(event, 'Seite10')">Mittagskarte</button>
+      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite1')">Vorspeise/Supen</button>
+      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite2')">Omeletts/Beilagen/Salate</button>
+      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite3')">Spezialitäten vom Grill (1)</button>
+      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite4')">Spezialitäten vom Grill (2)</button>
+      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite5')">Steaks/Für 2 und 4 Personen</button>
+      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite6')">Spaghetti/Aus dem Backofen/Vegetarisch</button>
+      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite7')">Besonderen Empfehlungen/Fisch</button>
+      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite8')">Für kleinen Gäste/Pizza</button>
+      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite9')">Dessert</button>
+      <button class="tablinks" onclick="openSpeisekarte(event, 'Seite10')">Mittagskarte</button>
     </div><br>
     
-    <div id="Seite1" class="menusite">
+    <div id="Seite1" class="tabcontent">
 <div class="row">
   <div class="ItemInfo-Price" style="padding-left: 10px;">
        VORSPEISEN (Alle Vorspeisen mit Brot)
@@ -155,31 +145,31 @@
 </div>
     </div>
 
-    <div id="Seite2" class="menusite">
+    <div id="Seite2" class="tabcontent">
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     </div>
-    <div id="Seite3" class="menusite">
+    <div id="Seite3" class="tabcontent">
   bbbbbbbbbbbbbbbbbbbbbbbbbbb    
     </div>
-    <div id="Seite4" class="menusite">
+    <div id="Seite4" class="tabcontent">
       ccccccccccccccccccccccccccccccccccccccc
     </div>
-    <div id="Seite5" class="menusite">
+    <div id="Seite5" class="tabcontent">
      ddd
     </div>
-    <div id="Seite6" class="menusite">
+    <div id="Seite6" class="tabcontent">
       eeee
     </div>
-    <div id="Seite7" class="menusite">
+    <div id="Seite7" class="tabcontent">
       ffff
     </div>
-    <div id="Seite8" class="menusite">
+    <div id="Seite8" class="tabcontent">
       ggg
     </div>
-    <div id="Seite9" class="menusite">
+    <div id="Seite9" class="tabcontent">
       9999
     </div>
-    <div id="Seite10" class="menusite">
+    <div id="Seite10" class="tabcontent">
       10000
     </div>
   </div>
