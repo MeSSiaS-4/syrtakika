@@ -27,14 +27,14 @@
     }
     
         function openMenuItem2(event, ItemName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+      var i, tabcontent2, tablinks2;
+      tabcontent2 = document.getElementsByClassName("tabcontent2");
+      for (i = 0; i < tabcontent2.length; i++) {
+        tabcontent2[i].style.display = "none";
       }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      tablinks2 = document.getElementsByClassName("tablinks2");
+      for (i = 0; i < tablinks2.length; i++) {
+        tablinks2[i].className = tablinks2[i].className.replace(" active", "");
       }
       document.getElementById(ItemName).style.display = "block";
       evt.currentTarget.className += " active";
@@ -66,19 +66,19 @@
   <div id="Speisekarte" class="tabcontent">
   
     <div class="tab">
-      <button class="tablinks" onclick="openMenuItem2(event, 'Seite1')">Vorspeise/Supen</button>
-      <button class="tablinks" onclick="openMenuItem2(event, 'Seite2')">Omeletts/Beilagen/Salate</button>
-      <button class="tablinks" onclick="openMenuItem2(event, 'Seite3')">Spezialitäten vom Grill (1)</button>
-      <button class="tablinks" onclick="openMenuItem2(event, 'Seite4')">Spezialitäten vom Grill (2)</button>
-      <button class="tablinks" onclick="openMenuItem2(event, 'Seite5')">Steaks/Für 2 und 4 Personen</button>
-      <button class="tablinks" onclick="openMenuItem2(event, 'Seite6')">Spaghetti/Aus dem Backofen/Vegetarisch</button>
-      <button class="tablinks" onclick="openMenuItem2(event, 'Seite7')">Besonderen Empfehlungen/Fisch</button>
-      <button class="tablinks" onclick="openMenuItem2(event, 'Seite8')">Für kleinen Gäste/Pizza</button>
-      <button class="tablinks" onclick="openMenuItem2(event, 'Seite9')">Dessert</button>
-      <button class="tablinks" onclick="openMenuItem2(event, 'Seite10')">Mittagskarte</button>
+      <button class="tablinks2" onclick="openMenuItem2(event, 'Seite1')">Vorspeise/Supen</button>
+      <button class="tablinks2" onclick="openMenuItem2(event, 'Seite2')">Omeletts/Beilagen/Salate</button>
+      <button class="tablinks2" onclick="openMenuItem2(event, 'Seite3')">Spezialitäten vom Grill (1)</button>
+      <button class="tablinks2" onclick="openMenuItem2(event, 'Seite4')">Spezialitäten vom Grill (2)</button>
+      <button class="tablinks2" onclick="openMenuItem2(event, 'Seite5')">Steaks/Für 2 und 4 Personen</button>
+      <button class="tablinks2" onclick="openMenuItem2(event, 'Seite6')">Spaghetti/Aus dem Backofen/Vegetarisch</button>
+      <button class="tablinks2" onclick="openMenuItem2(event, 'Seite7')">Besonderen Empfehlungen/Fisch</button>
+      <button class="tablinks2" onclick="openMenuItem2(event, 'Seite8')">Für kleinen Gäste/Pizza</button>
+      <button class="tablinks2" onclick="openMenuItem2(event, 'Seite9')">Dessert</button>
+      <button class="tablinks2" onclick="openMenuItem2(event, 'Seite10')">Mittagskarte</button>
     </div><br>
     
-    <div id="Seite1" class="tabcontent">
+    <div id="Seite1" class="tabcontent2">
 <div class="row">
   <div class="ItemInfo-Price" style="padding-left: 10px;">
        VORSPEISEN (Alle Vorspeisen mit Brot)
@@ -164,25 +164,25 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     <div id="Seite3" class="tabcontent">
   bbbbbbbbbbbbbbbbbbbbbbbbbbb    
     </div>
-    <div id="Seite4" class="tabcontent">
+    <div id="Seite4" class="tabcontent2">
       ccccccccccccccccccccccccccccccccccccccc
     </div>
-    <div id="Seite5" class="tabcontent">
+    <div id="Seite5" class="tabcontent2">
      ddd
     </div>
-    <div id="Seite6" class="tabcontent">
+    <div id="Seite6" class="tabcontent2">
       eeee
     </div>
-    <div id="Seite7" class="tabcontent">
+    <div id="Seite7" class="tabcontent2">
       ffff
     </div>
-    <div id="Seite8" class="tabcontent">
+    <div id="Seite8" class="tabcontent2">
       ggg
     </div>
-    <div id="Seite9" class="tabcontent">
+    <div id="Seite9" class="tabcontent2">
       9999
     </div>
-    <div id="Seite10" class="tabcontent">
+    <div id="Seite10" class="tabcontent2">
       10000
     </div>
   </div>
