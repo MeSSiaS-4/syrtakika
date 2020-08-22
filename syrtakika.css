@@ -13,35 +13,6 @@
   background-color: #000000;
   }
 
-.tab2 {
-  overflow: hidden;
-  background-color: #000000;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  }
-
-.tab2 button {
-  color: #FFFFFF;
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-  }
-
-.tab2 button:hover {
-  background-color: #001489;
-  }
-
-/* Create an active/current tablink class */
-.tab2 button.active {
-  background-color: #001489;
-  }
-
 /* Style the buttons inside the tab */
 .tab button {
   color: #FFFFFF;
@@ -67,6 +38,41 @@
 
 /* Style the tab content */
 .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  }
+
+/* Style the tab */
+.tab2 {
+  overflow: hidden;
+  background-color: #000000;
+  }
+
+/* Style the buttons inside the tab */
+.tab2 button {
+  color: #FFFFFF;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  }
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  background-color: #001489;
+  }
+
+/* Create an active/current tablink class */
+.tab2 button.active {
+  background-color: #001489;
+  }
+
+/* Style the tab content */
+.tabcontent2 {
   display: none;
   padding: 6px 12px;
   }
