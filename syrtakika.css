@@ -3,6 +3,7 @@
   }
 
 .body {
+  font-family: Arial, Helvetica, sans-serif;
   color: #FFFFFF;
   background-color: #001489;
   }
@@ -23,7 +24,7 @@
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 22px;
   }
 
 /* Change background color of buttons on hover */
@@ -55,10 +56,10 @@
   float: left;
   border: none;
   outline: none;
+  font-size: 19px;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px;
   }
 
 /* Change background color of buttons on hover */
@@ -83,7 +84,6 @@
 
 .KontaktText {
   text-align: center;
-  font-size: 17px;
   }
 
 .menusite {
@@ -95,12 +95,12 @@
 
 /* Create two equal columns that floats next to each other */
 .ItemInfo-Price {
-  font-size:4vw;
   color: #FFFFFF;
   line-height: 1.6;
   padding-right: 3px;
   background-color: #040D45;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
   white-space: pre;
   float: left;
 }
@@ -112,3 +112,9 @@
   display: table;
   clear: both;
 }
+
+.datenschutz {
+  background-color: #000000;
+  padding-right: 10px;
+  padding-left: 10px;
+  }
