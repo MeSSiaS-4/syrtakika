@@ -6,8 +6,18 @@
 
   </head>
   
-<body class="body" onload="StartSeiteLoad()">
+<body class="body" onload="StartSeiteLoad();popup('autopopup.html', 'ad')">
   <script>
+    function popup(mylink, windowname) {
+      if (! window.focus)return true;
+      var href;
+      if (typeof(mylink) == 'string') href=mylink;
+      else href=mylink.href;
+      window.open(href, windowname, 'width=400,height=200,scrollbars=yes');
+      return false; }
+
+Read more: https://html.com/javascript/popup-windows/#ixzz6fhMs2e1K
+    
     function openMenuItem(event, ItemName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
