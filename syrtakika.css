@@ -9,8 +9,7 @@
   
   /* snow */
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
-  filter: drop-shadow(0 0 100px white);
+  filter: drop-shadow(0 0 10px white);
   }
 
 @function random_range($min, $max) {
@@ -20,7 +19,7 @@
 }
 
 .snow {
-  $total: 2000;
+  $total: 200;
   position: absolute;
   width: 10px;
   height: 10px;
