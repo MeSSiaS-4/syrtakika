@@ -8,7 +8,6 @@
   background-color: #001489;
   }
 
-
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -118,4 +117,13 @@
   background-color: #000000;
   padding-right: 10px;
   padding-left: 10px;
+  }
+
+.news {
+  text-align: center;
+  background-image: url('Syrtaki-front-corona-december.jpg');
+  width: 720px;
+  height: 513px;
+  margin-left: auto;
+  margin-right: auto;
   }
