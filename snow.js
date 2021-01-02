@@ -4,7 +4,7 @@
 */
 
 // Amount of Snowflakes
-var snowMax = 50;
+var snowMax = 70;
 
 // Snowflake Colours
 var snowColor = ["#DDD", "#EEE"];
