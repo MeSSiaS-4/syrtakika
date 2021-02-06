@@ -285,6 +285,7 @@ margin: auto auto;
 }
 
 .speisekarte {
+width: 100%;
   min-height: 790px;
   margin: 0px;
   padding: 0px;
@@ -399,6 +400,7 @@ div.categories {
 
 /* Style the tab content */
 .tabcontent2 {
+width: 100%;
   max-width: 440px;
   display: none;
   font-size: 90%;
