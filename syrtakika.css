@@ -1,0 +1,490 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  background-color: #001489;
+}
+
+.kobody {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  background-color: #001489;
+  text-align: center;
+}
+
+.Logo {
+  text-align: center;
+}
+
+.maiandros {
+  background-repeat: repeat-x;
+  background-image: url("maiandros3.png");
+  height: 21px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu div {
+  width: 100%;
+  font-size: medium;
+}
+
+.menu ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0px;
+}
+  
+.menu li {
+  display: inline;
+  text-align: center;
+}
+
+.menu button {
+  color: #FFFFFF;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.8s;
+  margin: 0;
+  padding: 5px 12px 5px;
+  border-color: #FFFFFF;
+  font-weight: bold;
+}
+
+.menu button:hover {
+  background-color: #FFFFFF;
+  color: #001489;
+}
+
+.maingrid {
+  margin: 0px;
+  padding: 0px;
+  color: #000000;
+}
+
+.mainpic {
+width: 70%;
+max-width: 720px;
+  background-color: #000000;
+  border: 1px solid #acacac;
+margin: 12px auto;
+}
+
+.mainpic img {
+width: 100%;
+}
+
+.news {
+  text-align: center;
+  background-color: #f65555;
+  border-radius: 25px;
+  border: 2px solid #FFFFFF;
+  padding: 20px;
+  width: 78%;
+  max-width: 700px;
+margin: 20px auto;
+}
+
+.story {
+  background-color: #acacac;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #FFFFFF;
+  padding: 20px;
+  width: 85%;
+margin: 20px auto;
+}
+
+.slideshow {
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+  max-width: 550px;
+  padding: 10px;
+height: 420px;
+margin: 20px auto;
+}
+
+.footergrid {
+  width: 100%;
+  max-width: 550px;
+  font-size: 85%;
+  padding: 15px 0px 30px;
+margin: auto auto;
+  text-align: center;
+}
+
+.kontakt {
+    width: 50%;
+  text-align: center;
+  float:left;
+margin: auto auto;
+}
+
+.footeritem {
+  display: inline-block;
+  margin: 0px;
+}
+
+.zeiten {
+    width: 50%;
+  overflow: hidden;
+margin: auto auto;
+}
+
+.slideshow img {
+  position:absolute;
+  width: 100%;
+  max-width: 550px;
+}
+
+.slideshow p {
+  background-color: #000000;
+  color: #FFFFFF;
+  position:absolute;
+  width: 100%;
+  max-width: 550px;
+}
+
+@-webkit-keyframes xfade {
+  0% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity:1;
+  }
+  16.5% {
+    opacity:0;
+  }
+  96% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes xfade {
+  0% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity:1;
+  }
+  16.5% {
+    opacity:0;
+  }
+  96% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.slideshow p:nth-child(8) {
+  -webkit-animation: xfade 40s 0s infinite;
+  animation: xfade 40s 0s infinite;
+}
+.slideshow p:nth-child(7) {
+  -webkit-animation: xfade 40s 5s infinite;
+  animation: xfade 40s 5s infinite;
+}
+.slideshow p:nth-child(6) {
+  -webkit-animation: xfade 40s 10s infinite;
+  animation: xfade 40s 10s infinite;
+}
+.slideshow p:nth-child(5) {
+  -webkit-animation: xfade 40s 15s infinite;
+  animation: xfade 40s 15s infinite;
+}
+.slideshow p:nth-child(4) {
+  -webkit-animation: xfade 40s 20s infinite;
+  animation: xfade 40s 20s infinite;
+}
+.slideshow p:nth-child(3) {
+  -webkit-animation: xfade 40s 25s infinite;
+  animation: xfade 40s 25s infinite;
+}
+.slideshow p:nth-child(2) {
+  -webkit-animation: xfade 40s 30s infinite;
+  animation: xfade 40s 30s infinite;
+}
+.slideshow p:nth-child(1) {
+  -webkit-animation: xfade 40s 35s infinite;
+  animation: xfade 40s 35s infinite;
+}
+
+.KontaktText {
+  text-align: center;
+  display: inline-block;
+}
+
+.content {
+  border-radius: 25px;
+  border: 2px solid #FFFFFF;
+  background-color: #4f4b4b;
+  margin: 5px;
+  padding: 25px;
+}
+
+.content table {
+  text-align: left;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.btn {
+  color: #e5dc15;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #e5dc15;
+  border-radius: 0.5rem;
+  position: relative;
+  top: 0;
+  transition: all 300ms ease-in-out;
+  box-shadow: 0 0.6em #c2bb11, 0 0.9em rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  background: #e5dc15;
+  color: #0e79b2;
+}
+
+.btn.b-1:hover {
+  top: 0.2em;
+  box-shadow: 0 0.4em #c2bb11, 0 0.7em rgba(0, 0, 0, 0.4);
+}
+
+.btn.b-1:active {
+  top: 0.4em;
+  box-shadow: 0 0.2em #c2bb11, 0 0.5em rgba(0, 0, 0, 0.4);
+}
+
+.datenschutz {
+  white-space: pre-wrap;
+  border-radius: 25px;
+  border: 2px solid #FFFFFF;
+  background-color: #4f4b4b;
+  margin: 5px;
+  padding: 25px;
+  font-size: 80%;
+}
+
+.datenschutz a {
+  color: #000000;
+}
+
+.speisekarte {
+  min-height: 790px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.speisekartefront {
+max-width: 440px;
+text-align: center;
+}
+
+div.categories {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #3352ff;
+}
+
+.categories ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+  
+.categories li {
+  display: inline;
+  text-align: center;
+  margin: 1px;
+  padding: 0px;
+}
+
+.categories button {
+  color: #FFFFFF;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.8s;
+  margin: 0;
+  padding: 3px 7px 3px;
+  border-color: #FFFFFF;
+}
+
+.categories button:hover {
+  background-color: #FFFFFF;
+  color: #001489;
+}
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  color: #FFFFFF;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 9px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #001489;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #001489;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+}
+
+/* Style the tab */
+.tab2 {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+/* Style the buttons inside the tab */
+.tab2 button {
+  color: #FFFFFF;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 9px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  background-color: #001489;
+}
+
+/* Create an active/current tablink class */
+.tab2 button.active {
+  background-color: #001489;
+}
+
+/* Style the tab content */
+.tabcontent2 {
+  max-width: 440px;
+  display: none;
+  font-size: 90%;
+  margin: auto auto;
+}
+
+/* Create two equal columns that floats next to each other */
+.ItemInfo-Price {
+  color: #FFFFFF;
+  line-height: 1.6;
+  background-color: #040D45;
+  white-space: pre;
+  float: left;
+  margin: 0px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/* Next & previous buttons */
+.prev, .next, .top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 3%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: #FF0000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #ffffff;
+}
+
+/* Position the "next button" to the right & the "previous button" to the left & the "top button" to the center */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.top {
+  left: 50%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .top:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .top, .text {font-size: 11px}
+}
