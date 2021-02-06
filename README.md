@@ -1,4 +1,2 @@
-# syrtakika
-test page for syrtaki Karlsruhe
-
-http://syrtakika.de/
+# Syrtakika
+The 3rd version of my WEBSITE https://syrtakika.de
