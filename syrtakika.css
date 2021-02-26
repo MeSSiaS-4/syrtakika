@@ -495,3 +495,7 @@ div.categories {
   text-align: center;
   font-size: 100%;
 }
+
+.error h1 {
+  font-size: 200%;
+}
