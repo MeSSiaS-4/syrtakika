@@ -499,3 +499,21 @@ div.categories {
 .error h1 {
   font-size: 700%;
 }
+
+.error a {
+  color: #FFFFFF;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.8s;
+  margin: 0;
+  padding: 5px 12px 5px;
+  border-color: #FFFFFF;
+  font-weight: bold;
+}
+
+.error a:hover {
+  background-color: #FFFFFF;
+  color: #001489;
+}
