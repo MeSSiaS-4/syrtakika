@@ -10,7 +10,7 @@ var snowMax = 70;
 var snowColor = ["#DDD", "#EEE"];
 
 // Snow Entity
-var snowEntity = "&#10052;";
+var snowEntity = "&#x2744;";
 
 // Falling Velocity
 var snowSpeed = 0.75;
