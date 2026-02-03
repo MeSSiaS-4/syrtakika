@@ -12,6 +12,9 @@ var snowColor = ["#DDD", "#EEE"];
 // Snow Entity
 var snowEntity = "&#x2764;&#xfe0f;";
 
+// snow : &#x2744;
+// heart : &#x2764;&#xfe0f;
+
 // Falling Velocity
 var snowSpeed = 0.75;
 
