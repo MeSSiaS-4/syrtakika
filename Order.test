@@ -1,0 +1,99 @@
+<form action="https://formsubmit.co" method="POST" style="max-width: 500px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; color: #333;">🛍️ Παραγγελία για Παραλαβή</h2>
+    <p style="text-align: center; font-size:14px; color:#666; margin-bottom: 25px;">Επιλέξτε τα πιάτα σας και περάστε να τα πάρετε!</p>
+
+    <!-- ΠΙΑΤΟ 1 -->
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee;">
+        <div>
+            <strong style="display:block; color:#222;">Burger Κλασικό</strong>
+            <span style="font-size:14px; color:#28a745; font-weight: bold;">7.50 €</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <button type="button" onclick="changeQty('burger', -1, 7.50)" style="width:35px; height:35px; font-weight:bold; cursor:pointer; background:#f4f4f4; border:1px solid #ccc; border-radius:4px;">-</button>
+            <input type="number" id="burger" name="Ποσότητα_Burger_Κλασικό" value="0" min="0" style="width: 40px; text-align: center; font-weight:bold; border:none; font-size:16px;" readonly>
+            <button type="button" onclick="changeQty('burger', 1, 7.50)" style="width:35px; height:35px; font-weight:bold; cursor:pointer; background:#f4f4f4; border:1px solid #ccc; border-radius:4px;">+</button>
+        </div>
+    </div>
+
+    <!-- ΠΙΑΤΟ 2 -->
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee;">
+        <div>
+            <strong style="display:block; color:#222;">Πίτσα Σπεσιάλ</strong>
+            <span style="font-size:14px; color:#28a745; font-weight: bold;">9.00 €</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <button type="button" onclick="changeQty('pizza', -1, 9.00)" style="width:35px; height:35px; font-weight:bold; cursor:pointer; background:#f4f4f4; border:1px solid #ccc; border-radius:4px;">-</button>
+            <input type="number" id="pizza" name="Ποσότητα_Πίτσα_Σπεσιάλ" value="0" min="0" style="width: 40px; text-align: center; font-weight:bold; border:none; font-size:16px;" readonly>
+            <button type="button" onclick="changeQty('pizza', 1, 9.00)" style="width:35px; height:35px; font-weight:bold; cursor:pointer; background:#f4f4f4; border:1px solid #ccc; border-radius:4px;">+</button>
+        </div>
+    </div>
+
+    <!-- ΠΙΑΤΟ 3 -->
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee;">
+        <div>
+            <strong style="display:block; color:#222;">Coca Cola 330ml</strong>
+            <span style="font-size:14px; color:#28a745; font-weight: bold;">2.00 €</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <button type="button" onclick="changeQty('cola', -1, 2.00)" style="width:35px; height:35px; font-weight:bold; cursor:pointer; background:#f4f4f4; border:1px solid #ccc; border-radius:4px;">-</button>
+            <input type="number" id="cola" name="Ποσότητα_Coca_Cola" value="0" min="0" style="width: 40px; text-align: center; font-weight:bold; border:none; font-size:16px;" readonly>
+            <button type="button" onclick="changeQty('cola', 1, 2.00)" style="width:35px; height:35px; font-weight:bold; cursor:pointer; background:#f4f4f4; border:1px solid #ccc; border-radius:4px;">+</button>
+        </div>
+    </div>
+
+    <!-- ΕΜΦΑΝΙΣΗ ΣΥΝΟΛΟΥ -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin: 25px 0; padding: 15px; background: #f9f9f9; border-radius: 6px;">
+        <span style="font-size: 18px; font-weight: bold; color: #333;">Συνολικό Ποσό:</span>
+        <!-- Αυτό το κρυφό πεδίο στέλνει το σύνολο στο email σας -->
+        <input type="hidden" id="hidden_total" name="Συνολικό_Ποσό_Πληρωμής" value="0.00 €">
+        <span id="total_display" style="font-size: 22px; font-weight: bold; color: #28a745;">0.00 €</span>
+    </div>
+
+    <!-- ΣΤΟΙΧΕΙΑ ΠΕΛΑΤΗ -->
+    <h3 style="margin-top:25px; color:#333; border-bottom: 2px solid #eee; padding-bottom: 5px;">👤 Στοιχεία Επικοινωνίας</h3>
+    
+    <label style="font-weight:bold; font-size:14px;">Όνομα:</label><br>
+    <input type="text" name="Όνομα_Πελάτη" required style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"><br>
+    
+    <label style="font-weight:bold; font-size:14px;">Τηλέφωνο:</label><br>
+    <input type="tel" name="Τηλέφωνο" required style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"><br>
+    
+    <label style="font-weight:bold; font-size:14px;">Επιθυμητή Ώρα Παραλαβής:</label><br>
+    <input type="time" name="Ώρα_Παραλαβής" required style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"><br>
+    
+    <label style="font-weight:bold; font-size:14px;">Σχόλια / Ιδιαιτερότητες:</label><br>
+    <textarea name="Σχόλια" rows="2" placeholder="π.χ. χωρίς πατάτες, διπλή σάλτσα..." style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 25px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: Arial, sans-serif;"></textarea><br>
+
+    <!-- ΡΥΘΜΙΣΗ FORMSUBMIT -->
+    <input type="hidden" name="_skip_empty" value="true">
+
+    <button type="submit" style="background-color: #28a745; color: white; border: none; padding: 14px 20px; font-size: 18px; cursor: pointer; width: 100%; font-weight: bold; border-radius:6px; transition: 0.2s;">
+        🛍️ Ολοκλήρωση & Παραλαβή
+    </button>
+</form>
+
+<!-- ΤΟ ΕΞΥΠΝΟ SCRIPT ΓΙΑ ΤΑ ΚΟΥΜΠΙΑ ΚΑΙ ΤΟ ΣΥΝΟΛΟ -->
+<script>
+var totalCost = 0.00;
+
+function changeQty(id, amount, price) {
+    var input = document.getElementById(id);
+    var currentVal = parseInt(input.value);
+    var newVal = currentVal + amount;
+    
+    // Έλεγχος για να μην πέσει η ποσότητα κάτω από το μηδέν
+    if (newVal >= 0) {
+        input.value = newVal;
+        
+        // Υπολογισμός του νέου συνόλου
+        totalCost = totalCost + (amount * price);
+        
+        // Εμφάνιση του συνόλου στην οθόνη με 2 δεκαδικά
+        document.getElementById('total_display').innerText = totalCost.toFixed(2) + " €";
+        
+        // Αποθήκευση του συνόλου στο κρυφό πεδίο για να σταλεί στο email
+        document.getElementById('hidden_total').value = totalCost.toFixed(2) + " €";
+    }
+}
+</script>
