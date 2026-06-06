@@ -90,3 +90,61 @@ function changeQty(id, amount, price) {
     }
 }
 </script>
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Βρίσκουμε όλα τα προϊόντα στη σελίδα
+    const items = document.querySelectorAll(".menu-item");
+    const totalDisplay = document.getElementById("gesamtbetrag");
+
+    // 2. Λειτουργία για τον υπολογισμό του τελικού ποσού
+    function updateTotalPrice() {
+        let total = 0;
+        
+        items.forEach(item => {
+            // Παίρνουμε την τιμή (π.χ. "12.50 €" -> 12.50)
+            const priceText = item.querySelector(".price").textContent;
+            const price = parseFloat(priceText.replace("€", "").trim());
+            
+            // Παίρνουμε την ποσότητα από το κουτί
+            const quantity = parseInt(item.querySelector(".quantity-input").value) || 0;
+            
+            // Προσθέτουμε στο σύνολο
+            total += price * quantity;
+        });
+
+        // Εμφανίζουμε το σύνολο με 2 δεκαδικά ψηφία
+        if (totalDisplay) {
+            totalDisplay.textContent = total.toFixed(2) + " €";
+        }
+    }
+
+    // 3. Προσθέτουμε τη λειτουργία στα κουμπιά + και - κάθε προϊόντος
+    items.forEach(item => {
+        const plusBtn = item.querySelector(".btn-plus");
+        const minusBtn = item.querySelector(".btn-minus");
+        const input = item.querySelector(".quantity-input");
+
+        // Όταν πατάμε το +
+        plusBtn.addEventListener("click", () => {
+            let value = parseInt(input.value) || 0;
+            input.value = value + 1;
+            updateTotalPrice();
+        });
+
+        // Όταν πατάμε το -
+        minusBtn.addEventListener("click", () => {
+            let value = parseInt(input.value) || 0;
+            if (value > 0) {
+                input.value = value - 1;
+                updateTotalPrice();
+            }
+        });
+
+        // Αν ο χρήστης γράψει έναν αριθμό κατευθείαν με το πληκτρολόγιο
+        input.addEventListener("input", () => {
+            if (parseInt(input.value) < 0 || !input.value) {
+                input.value = 0;
+            }
+            updateTotalPrice();
+        });
+    });
+});
