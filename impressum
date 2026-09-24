@@ -1,16 +1,59 @@
-Impressum
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Impressum - Restaurant Syrtaki Karlsruhe">
+    <meta property="og:title" content="SYRTAKI - Impressum">
+    <link rel="canonical" href="https://syrtakika.de/impressum">
+    <link rel="icon" href="syrtakika-ico.png">
+    <title>SYRTAKI - Impressum</title>
+    <link rel="stylesheet" type="text/css" href="syrtakika.css">
+</head>
 
-Angaben gemäß § 5 DDG
+<body class="kobody">
+  <script src="snow.js"></script>
 
-Restaurant Syrtaki
-Inhaber: Apostolos Lakos
-Herrenstrasse 36
-76133 Karlsruhe
+  <!-- Logo -->
+  <div class="maiandros"></div>
+  <div class="Logo">
+    <a href="/"><img src="Syrtaki-Logo.png" alt="Syrtaki Logo" style="width:400px;max-width:100%;height:100px;"></a>
+  </div>
+  <div class="maiandros"></div>
 
-Telefon: 0721 - 21514
-E-Mail: [βάλε εδώ την πραγματική email σου]
+  <!-- Menu -->
+  <div class="menu">
+    <ul>
+      <li><a href="/"><button>Startseite</button></a></li><!--
+      --><li><a href="/speisekarte"><button>Speisekarte</button></a></li><!--
+      --><li><a href="/kontakt"><button>Kontakt</button></a></li><!--
+      --><li><a href="/datenschutz"><button>Datenschutz</button></a></li><!--
+      --><li><a href="/impressum"><button>Impressum</button></a></li>
+    </ul>
+  </div>
+  <div class="maiandros"></div>
 
-Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
-Apostolos Lakos
-Herrenstrasse 36
-76133 Karlsruhe
+  <!-- Content -->
+  <div class="KontaktText">
+    <div class="content">
+      <h3><u>Impressum</u></h3>
+      <p><strong>Angaben gemäß § 5 DDG</strong></p>
+      <br>
+      <p><strong>Restaurant Syrtaki</strong></p>
+      <p>Inhaber: Apostolos Lakos</p>
+      <p>Herrenstrasse 36</p>
+      <p>76133 Karlsruhe</p>
+      <br>
+      <p>Telefon: 0721 - 21514</p>
+      <p>E-Mail: <em>[βάλε εδώ το email σου, π.χ. info@syrtakika.de]</em></p>
+      <br>
+      <p><strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</strong></p>
+      <p>Apostolos Lakos</p>
+      <p>Herrenstrasse 36</p>
+      <p>76133 Karlsruhe</p>
+    </div>
+  </div>
+
+  <div class="maiandros"></div>
+</body>
+</html>
